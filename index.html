@@ -499,7 +499,7 @@
             
             let data;
             try {
-                const res = await fetch("http://localhost:8000/api/v1/analyze", {
+                const res = await fetch("https://news-validator-mdxh.onrender.com/api/v1/analyze", {
                     method: "POST", headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ url: url, headline: headline })
                 });
